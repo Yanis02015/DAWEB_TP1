@@ -1,0 +1,337 @@
+<!--
+    -- Nom : OULHACI
+    -- Prénom : Yanis
+    -- Groupe : B2-2 / B4
+    -->
+
+
+<!DOCTYPE html> <!-- Une information déstinée au navigateur sur le type de document à attendre -->
+
+<html lang="fr"> <!--Balise HTML ouvrante début du code, et en attribut lang pour fixer la langue par défaut à français -->
+
+
+<!-- 
+    -- Balise ouvrante head qui est un conteneur pour les métadonnéees 
+-->
+<head> 
+    <meta charset="UTF-8">  <!-- Spécifies le codage des caractères du document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permet d'ajuster le contenu à la fenêtre pour une meilleure UX -->
+    <title>Document</title> <!-- Le titre qui va s'afficher sur l'onglet de la page -->
+</head> <!-- Fermiture de la balise head -->
+
+
+<!-- 
+    -- Ouverture de la balise body qui represente le corps de la page
+-->
+<body> 
+    <p>Hello World !</p> <!-- Une balise p qui permet l'ecriture de paragraphe -->
+
+
+    <!-- 
+        -- Exercice 1
+    -->
+
+    <!-- Question C -->
+        <!-- Les balises inline :
+                <a>             <abbr>          <acronym>
+                <area />        <bdo>           <br />
+                <button>        <caption>       <cite>
+                <code>          <del>           <dfn>
+                <em>            <img />         <input />
+                <ins>           <kbd>           <label>
+                <legend>        <link />        <meta />
+                <object>        <optgroup>      <option>
+                <param />       <q>             <samp>
+                <select>        <span>          <strong>
+                <sub>           <sup>           <textarea>
+                <title>         <var>
+            -->
+        
+        <!-- Les balises Block :
+                <address>       <blockquote>    <body>
+                <dd>            <div>           <dl>
+                <dt>            <fieldset>      <form>
+                <h1>            <h2>            <h3>
+                <h4>            <h5>            <h6>
+                <head>          <hr />          <html>
+                <li>            <map>           <noscript>
+                <ol>            <p>             <pre>
+                <script>        <style>         <table>
+                <tbody>         <td>            <tfoot>
+                <th>            <thead>         <tr>
+                <ul>
+            -->
+
+        <!--    Un élément de type Block commence toujours sur une nouvelle ligne et occupe toute la largeur disponible
+                (s'étend vers la gauche et la droite aussi loin que possible).
+
+                Tandis qu'un élément de type Inline ne commence pas sur une nouvelle ligne et ne prend que la largeur nécessaire.
+            -->
+        
+        
+
+    <!-- Question D -->
+        <!-- Exemple d'une balise Inline :
+        -->     <span>Une balise Inline</span><span>Donc pas de retour à la ligne ni d'espacement</span>
+
+        <!-- Exemple d'une balise Block :
+        -->     <div>Une balise en block</div><div>Donc retour à la ligne</div>
+
+    
+
+    <!-- Question E -->
+        <h1>Je suis un titre</h1>
+        <p>Et moi un texte simple</p>
+        <p style="text-decoration: underline;">Tandis que moi je vais être souligné</p>
+        <strong>Et moi je suis un texte très important</strong>
+        <br> <!-- Retour à la ligne -->
+        <i>Et moi je suis écrit en italique</i>
+        <br>
+        <strong><i>Hemm je suis en italique et en gras personne ne m'arrive à la cheville</i></strong>
+        <p style="color: blue;">Je suis bleu mais je ne suis pas un lien, ensemble pour luter contre la discrimination HTML</p>
+
+    
+        
+    <!-- Question F -->
+        <!-- Changer la couleur de l'arrière-plan -->
+        <style>
+            body{
+                background-color: #ececec;
+            }
+        </style>
+
+
+
+    <!-- Question G -->
+        <!-- Liste ordonnée et non-ordonnée -->
+        <ol>
+            <li>HTML</li>
+            <li>CSS3</li>
+            <li>J.S</li>
+            <li>PHP</li>
+        </ol>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS3</li>
+            <li>J.S</li>
+            <li>PHP</li>
+        </ul>
+
+
+
+    <!-- Question G -->
+        <!-- Lien Absolu
+        -->     <a href="C:\Users\yanis\Desktop\DAWEB\photos.jpg" target="_blank">Ma photo</a> <br>
+
+        <!-- Lien Absolu
+        -->     <a href="photos.jpg" target="_blank">Ma photo</a> <br>
+
+
+
+    <!-- Question G -->
+        <!-- Lien Absolu
+        -->     <img src="C:\Users\yanis\Desktop\DAWEB\photos.jpg" alt="Chuck Norris">
+
+        <!-- Lien Absolu
+        -->     <img src="photos.jpg" alt="Chuck Norris">
+
+    
+
+
+    
+    <!-- 
+        -- Exercice 2
+    -->
+
+        <style>  /* Ajouter des bordures et un padding */
+            table, th, td {
+            padding: 20px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            }
+        </style>
+
+
+        <!-- Question A
+        -->
+        <p>a)</p>
+        <table>
+            <tr>
+                <td></td>
+                <td colspan="2"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        
+        <!-- Question B
+        -->
+        <p>b)</p>
+        <table>
+            <tr>
+                <td></td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        
+        <!-- Question C
+        -->
+        <p>c)</p>
+        <table>
+            <tr>
+                <td></td>
+                <td colspan="2"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+
+
+
+    <!-- 
+        -- Exercice 3
+    -->
+
+        <!-- Question A -->
+        <form>
+            <fieldset>
+               <legend>Formulaire</legend>
+               <p>
+                    <label for="nom">Nom</label> : <input type="text" name="Nom" id="nom">
+                    &emsp;
+                    <label for="prenom">Prénom</label> : <input type="text" name="Prénom" id="prenom"> <br><br>
+                
+
+                    <label for="civilite">Civilite</label> : <br>
+                    <input type="radio" name="civilite" value="M" id="M">
+                    <label for="M">M</label><br>
+                    <input type="radio" name="civilite" value="Mlle" id="Mlle">
+                    <label for="Mlle">Mlle</label><br>
+                    <input type="radio" name="civilite" value="Mdme" id="Mdme">
+                    <label for="Mdme">Mdme</label> <br><br>
+
+
+                    <label for="numero">Numéro</label> : <input type="text" name="NumeroTel" id="numero"> <br><br>
+
+                    <input type="checkbox" id="checkbox" name="CheckBox">
+                    <label for="checkbox">Je souhaite être appelé à son numéro pour me répondre</label>
+
+                    <label for="commentaire">Commentaire :</label><br>
+                    <textarea name="commentaire" cols="65" rows="10" id="commentaire"></textarea> <br><br>
+
+                    <input type="submit" value="Envoyer">
+                    <input type="reset"  value="Remetre à Zéro">
+                </p>
+            </fieldset>
+        </form>
+
+
+
+        <!-- Question B -->
+        <h3>b) Liste des attributs de la balise form</h3>
+        <table>
+            <tr>
+                <td>accept</td>
+                <td>La liste des types acceptés par le serveur. Généralement, il s'agit de types de fichier.</td>
+            </tr>
+            <tr>
+                <td>accept-charset</td>
+                <td>La liste des jeux de caractères pris en charge.</td>
+            </tr>
+            <tr>
+                <td>action</td>
+                <td>L'URI d'un programme qui traite les informations envoyées par le formulaire.</td>
+            </tr>
+            <tr>
+                <td>autocomplete</td>
+                <td>Cet attribut indique que ces contrôles ou que ce formulaire peuvent être remplis automatiquement par le navigateur.</td>
+            </tr>
+            <tr>
+                <td>enctype</td>
+                <td>Cet attribut définit le type de contenu des données de formulaire envoyées lorsque la méthode utilisée est POST.</td>
+            </tr>
+            <tr>
+                <td>method</td>
+                <td>Cet attribut définit la méthode HTTP à utiliser pour l'envoi des données du formulaire (GET par défaut ou POST)</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>Le nom de l'élément qui peut être utilisé par le serveur pour identifier le champ d'un formulaire.</td>
+            </tr>
+            <tr>
+                <td>novalidate</td>
+                <td>Cet attribut indique que les données du formulaire ne doivent pas être validées lors de l'envoi.</td>
+            </tr>
+            <tr>
+                <td>target</td>
+                <td>L'attribut cible spécifie un nom ou un mot-clé indiquant où afficher la réponse reçue après l'envoi du formulaire.</td>
+            </tr>
+        </table>
+
+
+
+    <!-- 
+        -- Exercice 4
+    -->
+
+        <!-- Question A -->
+        <audio controls preload="metadata">
+            <source src="exemple-audio.mp3" type="audio/mpeg"> 
+            <source src="exemple-audio.wav" type="audio/wav">  
+            <source src="exemple-audio.mp3" type="audio/ogg; codecs=vorbis"> 
+                    le  navigateur ne peut pas lire d'audio
+        </audio><br>
+
+
+        <!-- Question B -->
+        <video src="exemple.mp4" width=300  height=300 controls poster="miniature.jpg">
+            Cette vidéo ne peut être affichée sur votre navigateur Internet.<br>
+        </video> 
+
+
+        <!-- Question C -->
+        <iframe src="https://www.allocine.fr/film/fichefilm_gen_cfilm=135279.html" width="100%" height="500" sandbox>
+            <p>
+                <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=135279.html">Un lien de secour</a>
+            </p>
+        </iframe>
+
+
+        <!-- Question D -->
+        <iframe
+            width="853"
+            height="480"
+            src="https://www.youtube.com/embed/mo2kgFP8v4c"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+
+
+</body> <!-- Fermiture de la balise body -->
+</html> <!-- Fermiture de la balise body -->
