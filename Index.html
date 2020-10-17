@@ -5,31 +5,36 @@
     -->
 
 
-<!DOCTYPE html> <!-- Une information déstinée au navigateur sur le type de document à attendre -->
-
-<html lang="fr"> <!--Balise HTML ouvrante début du code, et en attribut lang pour fixer la langue par défaut à français -->
-
 
 <!-- 
-    -- Balise ouvrante head qui est un conteneur pour les métadonnéees 
+    -- Exercice 1
 -->
-<head> 
-    <meta charset="UTF-8">  <!-- Spécifies le codage des caractères du document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permet d'ajuster le contenu à la fenêtre pour une meilleure UX -->
-    <title>Document</title> <!-- Le titre qui va s'afficher sur l'onglet de la page -->
-</head> <!-- Fermiture de la balise head -->
 
+    <!-- Question B -->
 
-<!-- 
-    -- Ouverture de la balise body qui represente le corps de la page
--->
-<body> 
-    <p>Hello World !</p> <!-- Une balise p qui permet l'ecriture de paragraphe -->
+    <!DOCTYPE html> <!-- Une information déstinée au navigateur sur le type de document à attendre -->
+
+    <html lang="fr"> <!-- Balise HTML ouvrante début du code, et en attribut lang pour fixer la langue par défaut à français -->
 
 
     <!-- 
-        -- Exercice 1
+        -- Balise ouvrante head qui est un conteneur pour les métadonnéees 
     -->
+    <head> 
+        <meta charset="UTF-8">  <!-- Spécifies le codage des caractères du document -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permet d'ajuster le contenu à la fenêtre pour une meilleure UX -->
+        <title>Document</title> <!-- Le titre qui va s'afficher sur l'onglet de la page -->
+    </head> <!-- Fermiture de la balise head -->
+
+
+    <!-- 
+        -- Ouverture de la balise body qui represente le corps de la page
+    -->
+    <body> 
+        <p>Hello World !</p> <!-- Une balise p qui permet l'ecriture de paragraphe -->
+
+
+    
 
     <!-- Question C -->
         <!-- Les balises inline :
@@ -75,7 +80,7 @@
         -->     <span>Une balise Inline</span><span>Donc pas de retour à la ligne ni d'espacement</span>
 
         <!-- Exemple d'une balise Block :
-        -->     <div>Une balise en block</div><div>Donc retour à la ligne</div>
+        -->     <div>Une balise en block</div><div>Donc retour à la ligne</div> 
 
     
 
@@ -103,7 +108,7 @@
 
 
     <!-- Question G -->
-        <!-- Liste ordonnée et non-ordonnée -->
+        <!-- Liste ordonnée -->
         <ol>
             <li>HTML</li>
             <li>CSS3</li>
@@ -111,6 +116,7 @@
             <li>PHP</li>
         </ol>
 
+        <!-- Liste non-ordonnée -->
         <ul>
             <li>HTML</li>
             <li>CSS3</li>
@@ -124,7 +130,7 @@
         <!-- Lien Absolu
         -->     <a href="C:\Users\yanis\Desktop\DAWEB\photos.jpg" target="_blank">Ma photo</a> <br>
 
-        <!-- Lien Absolu
+        <!-- Lien relatif
         -->     <a href="photos.jpg" target="_blank">Ma photo</a> <br>
 
 
@@ -133,7 +139,7 @@
         <!-- Lien Absolu
         -->     <img src="C:\Users\yanis\Desktop\DAWEB\photos.jpg" alt="Chuck Norris">
 
-        <!-- Lien Absolu
+        <!-- Lien relatif
         -->     <img src="photos.jpg" alt="Chuck Norris">
 
     
@@ -144,9 +150,9 @@
         -- Exercice 2
     -->
 
-        <style>  /* Ajouter des bordures et un padding */
+        <style>  /* Ajouter des bordures et un padding pour une meilleure lisibilité */
             table, th, td {
-            padding: 20px;
+            padding: 10px;
             border: 1px solid black;
             border-collapse: collapse;
             }
@@ -156,7 +162,7 @@
         <!-- Question A
         -->
         <p>a)</p>
-        <table>
+        <table width=100%> <!-- width=100% pour occuper toute la largeur disponible -->
             <tr>
                 <td></td>
                 <td colspan="2"></td>
@@ -173,7 +179,7 @@
         <!-- Question B
         -->
         <p>b)</p>
-        <table>
+        <table width=100%>
             <tr>
                 <td></td>
                 <td rowspan="2"></td>
@@ -190,7 +196,7 @@
         <!-- Question C
         -->
         <p>c)</p>
-        <table>
+        <table width=100%>
             <tr>
                 <td></td>
                 <td colspan="2"></td>
@@ -207,7 +213,7 @@
                 <td></td>
                 <td></td>
             </tr>
-        </table>
+        </table> <br><br>
 
 
 
@@ -219,7 +225,7 @@
         <!-- Question A -->
         <form>
             <fieldset>
-               <legend>Formulaire</legend>
+               <legend>Signaler un problème </legend>
                <p>
                     <label for="nom">Nom</label> : <input type="text" name="Nom" id="nom">
                     &emsp;
@@ -235,10 +241,10 @@
                     <label for="Mdme">Mdme</label> <br><br>
 
 
-                    <label for="numero">Numéro</label> : <input type="text" name="NumeroTel" id="numero"> <br><br>
+                    <label for="numero">Numéro</label> : <input type="text" name="NumeroTel" id="numero"> <br>
 
                     <input type="checkbox" id="checkbox" name="CheckBox">
-                    <label for="checkbox">Je souhaite être appelé à son numéro pour me répondre</label>
+                    <label for="checkbox">Je souhaite être appelé à son numéro pour me répondre</label> <br><br>
 
                     <label for="commentaire">Commentaire :</label><br>
                     <textarea name="commentaire" cols="65" rows="10" id="commentaire"></textarea> <br><br>
@@ -302,15 +308,15 @@
         <audio controls preload="metadata">
             <source src="exemple-audio.mp3" type="audio/mpeg"> 
             <source src="exemple-audio.wav" type="audio/wav">  
-            <source src="exemple-audio.mp3" type="audio/ogg; codecs=vorbis"> 
-                    le  navigateur ne peut pas lire d'audio
+            <source src="exemple-audio.ogg" type="audio/ogg"> 
+                Votre navigateur ne prend pas en charge l'élément audio.
         </audio><br>
 
 
         <!-- Question B -->
         <video src="exemple.mp4" width=300  height=300 controls poster="miniature.jpg">
-            Cette vidéo ne peut être affichée sur votre navigateur Internet.<br>
-        </video> 
+            Votre navigateur ne prend pas en charge l'élément vidéo.
+        </video><br>
 
 
         <!-- Question C -->
@@ -334,4 +340,4 @@
 
 
 </body> <!-- Fermiture de la balise body -->
-</html> <!-- Fermiture de la balise body -->
+</html> <!-- Fermiture de la balise html -->
